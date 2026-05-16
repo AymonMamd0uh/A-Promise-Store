@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #111111;
+  font-family: var(--font-poppins);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair);
+  line-height: 1.1;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Container */
+.container-custom {
+  width: 100%;
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+/* Sections */
+.section-padding {
+  padding-block: 100px;
+}
+
+/* Titles */
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.section-subtitle {
+  color: #6b7280;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* Buttons */
+.main-button {
+  background: #111111;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 16px;
+  transition: 0.3s;
+  border: 1px solid #111111;
+  font-weight: 500;
+}
+
+.main-button:hover {
+  background: transparent;
+  color: #111111;
+}
+
+.secondary-button {
+  border: 1px solid #111111;
+  padding: 16px 32px;
+  border-radius: 16px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.secondary-button:hover {
+  background: #111111;
+  color: white;
+}
+
+/* Cards */
+.luxury-card {
+  background: white;
+  border: 1px solid #f1f1f1;
+  border-radius: 28px;
+  transition: 0.4s;
+}
+
+.luxury-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+  font-family: var(--font-poppins);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .section-padding {
+    padding-block: 70px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .container-custom {
+    padding-inline: 18px;
+  }
+
+}
